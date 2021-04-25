@@ -2,37 +2,136 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 10vh;
+  background: rgb(73, 79, 82);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-items{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.nav-links {
+  display: flex;
+  color:white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  color:white;
+  font-size: 30px;
 }
+
+.link{
+  color:white;
+  font-size: 20px;
+  
+}
+
+.underline{
+  text-decoration: none !important;
+}
+
+
+.link:hover{
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  body{width: 100%; margin: auto; font-size: 1rem;}
+  nav-items{width:100%;}
+  title{font-size: 30px;}
+  link{font-size: 20px;}
+}
+
+@media screen and (max-width: 1024px) {
+  body{width: 100%; margin: auto; font-size: 1rem;}
+  .radio{size:25px; margin: auto;}
+  .search{width:550px; height: 35; margin-bottom: 0}
+   nav.items{max-width: 80%;}
+  .title{font-size: 20px;}
+}
+
+@media screen and (max-width: 770px) {
+  .nav-items{width: 800px;}
+  .title{font-size: 15px;}
+  .link{font-size: 10px;}
+  .radioitems{margin-left: -100px; }
+  #radioblock{display: inline; margin-left: 100px}
+  #heading{font-size: 30px; margin-left: 50px;}
+  #radiotext{margin-left: 50px;}
+  #search{width: 300px; margin-left: 200px; text-align: center;}
+  #button{margin-right: 100px;}
+  #error{margin-left: 80px;}
+  #something{display: block; margin-left: 450px;}
+  #resultcard{width:250px; height:100px; margin-left: 60px;}
+}
+
+@media screen and (max-width: 670px) {
+  #heading{font-size: 30px; margin-left: 170px;}
+  #radiotext{margin-left: 170px;}
+  #button{margin-right: 0px;}
+  #error{margin-left: 180px;}
+  #resultcard{ margin-left: 150px}
+}
+
+@media screen and (max-width: 580px) {
+  #search{width:280px;  margin-left: 240px}
+  #button{margin-right: 50px;}
+  #heading{font-size: 30px; margin-left: 160px;}
+  #radiotext{margin-left: 180px;}
+  .nav-items{width: 700px;}
+  .title{font-size: 15px;}
+  .link{font-size: 10px;}
+  .radioitems{margin-left: -40px;}
+  #something{display: block; margin-left: 400px;}
+  #resultcard{width:200px; height: 90px; margin-left: 150px}
+}
+
+@media screen and (max-width: 480px) {
+  body{width: 100%; margin: auto; font-size: 0.8rem;}
+  .nav-items{width: 650px;}
+  .title{font-size: 15px;}
+  .link{font-size: 10px;}
+  #heading{font-size: 25px;}
+  #search{width: 220px; margin-left: 280px;}
+  #button{ margin-right: 100px;}
+  #error{margin-left: 180px;}
+  .radioitems{margin-left: -10px;}
+  #resultcard{ margin-left: 130px}
+}
+
+@media screen and (max-width: 400px) {
+   body{width: 100%; margin: auto; font-size: 0.8rem;}
+  .nav-items{width: 600px;}
+  .title{font-size: 15px;}
+  .link{font-size: 10px;}
+  #heading{font-size: 18px; margin-left: 200px;}
+  #radiotext{margin-left: 200px;}
+  #search{width: 180px; margin-left: 320px; text-align: center; font-size: 10px;}
+  #button{margin-right: 100px;}
+  #error{margin-left: 230px;}
+  #something{display: block; margin-left: 430px;}
+  .radioitems{margin-left: -10px;}
+  #resultcard{width:150px; height: 80px; margin-left: 170px;}
+}
+
+@media screen and (max-width: 300px) {
+ #heading{font-size: 15px; margin-left: 250px;}
+ #radiotext{margin-left: 300px; font-size: 10px;}
+ #search{width: 180px; margin-left: 320px; height: 40px;}
+ #button{display: block; margin-right: -20px;  height: 40px;}
+ #error{margin-left: 320px;}
+ .radioitems{margin-left: -10px;}
+ #something{display: block; margin-left: 500px;}
+ #resultcard{margin-left: 300px;}
+}
+
+
+
