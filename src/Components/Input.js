@@ -26,6 +26,33 @@ export default function Input(props) {
     return tempary;
   };
 
+  const getObjectFromJSONArray1 = (json, keyName, value) => {
+    let temp = parseInt(value);
+    let tempary = json?.filter((child) => child[keyName] === temp);
+    if (tempary.length === 0 || tempary === undefined) {
+      setmessage("Nothing found");
+    } else {
+      setmessage("");
+    }
+    return tempary;
+  };
+
+  /*
+  const getObjectFromJSONArray1 = (array, value) => {
+    let temp = parseInt(value);
+    const data = array.find(({ number }) => number === temp);
+    const result = Object.keys(data).map(function (key) {
+      return [key, data[key]];
+    });
+    if (result.length === 0 || result === undefined) {
+      setmessage("Nothing found");
+    } else {
+      setmessage("");
+    }
+    console.log(result);
+    return result;
+  };
+*/
   /*
   const filterProparty = (array, prop, value) => {
     var filtered = [];
@@ -73,7 +100,7 @@ export default function Input(props) {
           setscuess(true);
           return byLocation;
         case "number":
-          const byNumber = getObjectFromJSONArray(
+          const byNumber = getObjectFromJSONArray1(
             props.building,
             "number",
             searchvalue

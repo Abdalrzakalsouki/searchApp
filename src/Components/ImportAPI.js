@@ -9,7 +9,7 @@ export default function ImportAPI() {
 
   async function getData() {
     await axios
-      .get("https://jsonplaceholder.typicode.com/users")
+      .get("https://buildingrestapi.azurewebsites.net")
       .then((response) => {
         setBuilding(response.data);
         SetIsloading(false);

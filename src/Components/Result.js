@@ -9,7 +9,6 @@ export default function Result(props) {
         <Card
           id="resultcard"
           elevation={4}
-          float="left"
           width={400}
           height={120}
           marginRight={30}
@@ -21,14 +20,10 @@ export default function Result(props) {
         >
           <Heading>{building.name}</Heading>
           <Text size={200} fontWeight="{bold}" color="#234361">
-            {building.location}
+            {building.description}
           </Text>
-          <Text size={200} fontWeight="{bold}" color="#234361">
-            {building.number}
-          </Text>
-          <Text size={200} fontWeight="{bold}" color="#234361">
-            {building.result}
-          </Text>
+          <Heading>{building.location}</Heading>
+          <Heading>{building.number}</Heading>
         </Card>
       ))}
     </div>
