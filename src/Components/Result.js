@@ -24,6 +24,7 @@ export default function Result(props) {
           </Text>
           <Heading>{building.location}</Heading>
           <Heading>{building.number}</Heading>
+          key={building.id}
         </Card>
       ))}
     </div>
