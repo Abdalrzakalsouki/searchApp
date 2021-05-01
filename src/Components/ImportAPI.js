@@ -13,6 +13,7 @@ export default function ImportAPI() {
       .then((response) => {
         setBuilding(response.data);
         SetIsloading(false);
+        console.log(response.data);
       })
       .catch((error) => {
         console.error("Error while fetching the data", error);
