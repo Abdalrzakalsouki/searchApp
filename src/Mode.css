@@ -1,14 +1,13 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 .dark {
-    background-color: #292C35;
-    color: cornsilk;
+  background-color: #292c35;
+  color: cornsilk;
 }
 
-.label{
+.label {
   background-color: #111;
   display: flex;
   align-items: center;
@@ -21,23 +20,22 @@
   transform: scale(1.5);
 }
 
-
-.ball{
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    height: 22px;
-    width: 22px;
-    top: 2px;
-    left: 2px;
-    transition: transform 0.2s linear;
+.ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s linear;
 }
 
-.checkbox{
-    opacity: 0;
-    position: absolute;
+.checkbox {
+  opacity: 0;
+  position: absolute;
 }
 
 .checkbox:checked + .label .ball {
-    transform: translateX(24px);
+  transform: translateX(24px);
 }
