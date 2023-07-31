@@ -11,9 +11,6 @@ export default function Input(props) {
   const [scuess, setscuess] = useState(false);
   const [message, setmessage] = useState("");
 
-  // testing array
-  // var arr = [{"nid":"31","0":{"tid":"20","name":"Bench Press","location":"main","number":"12","result":"55.00","comments":"sick!","maxload":"250"},"1":{"tid":"22","name":"Back Squat","location":"side","number":"1000","result":"8.00","comments":"i was tired.","maxload":"310"}},{"nid":"30","0":{"tid":"19","name":"Fran","location":"I'm a location","number":"2000","result":"5.00","comments":null}}];
-
   const getObjectFromJSONArray = (json, keyName, value) => {
     let tempary = json?.filter(
       (child) => child[keyName]?.toLowerCase() === value?.toLowerCase()
@@ -36,47 +33,6 @@ export default function Input(props) {
     }
     return tempary;
   };
-
-  /*
-  const getObjectFromJSONArray1 = (array, value) => {
-    let temp = parseInt(value);
-    const data = array.find(({ number }) => number === temp);
-    const result = Object.keys(data).map(function (key) {
-      return [key, data[key]];
-    });
-    if (result.length === 0 || result === undefined) {
-      setmessage("Nothing found");
-    } else {
-      setmessage("");
-    }
-    console.log(result);
-    return result;
-  };
-*/
-  /*
-  const filterProparty = (array, prop, value) => {
-    var filtered = [];
-    for (let i = 0; i < array.length; i++) {
-      var obj = array[i];
-      for (var key in obj) {
-        if (typeof obj[key] == "object") {
-          var item = obj[key];
-          console.log(item);
-          if (item[prop] === value) {
-            filtered.push(item);
-          }
-        }
-      }
-    }
-
-    if (filtered === undefined || filtered.length === 0) {
-    } else {
-      setmessage("");
-    }
-    return filtered;
-  };
-
-  */
 
   const handleSearch = () => {
     try {
